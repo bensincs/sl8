@@ -1,0 +1,15 @@
+{
+  "repo": {
+    "name": "ben",
+    "crew": "tony",
+    "dev_ops_tool_set": "azure-pipelines"
+  },
+  "components": [
+    {
+      "name": "proj1"
+    },
+    {
+      "name": "proj2"
+    }
+  ]
+}
