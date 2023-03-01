@@ -1,1 +1,8 @@
-# This is where all the dev ops pipelines are stored
+# Pipelines
+
+This directory contains the pipelines for the project.
+
+{{#each components}}
+- [{{this.name}}](./{{this.name}}.ci.azure-pipelines.yml)
+- [{{this.name}}](./{{this.name}}.cd.azure-pipelines.yml)
+{{/each}}
