@@ -1,0 +1,12 @@
+{
+    "repo": {
+        "name": "Repo X",
+        "crew": "Clarke",
+        "dev_ops_tool_set": "AZDO"
+    },
+    "components": [
+        {
+            "name": "component_x"
+        }
+    ]
+}

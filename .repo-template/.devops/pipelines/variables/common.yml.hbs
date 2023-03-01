@@ -1,0 +1,8 @@
+# Common pipeline variables
+#
+---
+variables:
+{{#each components}}
+- name: {{this.name}}_folder
+  value: ./components/{{this.name}}
+{{/each}}

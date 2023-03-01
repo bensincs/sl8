@@ -1,0 +1,25 @@
+{
+  "folders": [
+    {{#each components}}
+    {
+      "name": "{{this.name}}",
+      "path": "../projects/{{this.name}}"
+    },
+    {{/each}}
+    {
+      "name": "{{repo.name}} Root",
+      "path": "../"
+    }
+  ],
+  "extensions": {
+    "recommendations": [
+      "ms-vsliveshare.vsliveshare"
+    ]
+  },
+  "settings": {
+    "editor.formatOnSave": true,
+    "files.exclude": {
+      "projects": true
+    }
+  }
+}

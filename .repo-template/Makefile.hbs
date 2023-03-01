@@ -1,0 +1,9 @@
+dev-env:
+	@echo "Creating development environment..."
+	./scripts/utils/dev-env.sh
+	@echo "Development environment created."
+
+{{#each components}}
+{{this.name}}:
+	( cd ./components/{{this.name}} && make)
+{{/each}}

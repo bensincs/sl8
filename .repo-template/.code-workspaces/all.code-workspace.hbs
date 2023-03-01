@@ -1,0 +1,45 @@
+{
+  "folders": [
+    {
+      "name": "DevOps",
+      "path": "../.devops"
+    },
+    {
+      "name": "DevContainer",
+      "path": "../.devcontainer"
+    },
+    {
+      "name": "Code Workspaces",
+      "path": "../.code-workspaces"
+    },
+    {
+      "name": "Wiki",
+      "path": "../wiki"
+    },
+    {{#each components}}
+    {
+      "name": "{{this.name}}",
+      "path": "../projects/{{this.name}}"
+    },
+    {{/each}}
+    {
+      "name": "{{repo.name}} Root",
+      "path": "../"
+    }
+  ],
+  "extensions": {
+    "recommendations": [
+      "ms-vsliveshare.vsliveshare"
+    ]
+  },
+  "settings": {
+    "editor.formatOnSave": true,
+    "files.exclude": {
+      ".devops": true,
+      ".devcontainer": true,
+      ".code-workspaces": true,
+      "projects": true,
+      "wiki": true
+    }
+  }
+}
